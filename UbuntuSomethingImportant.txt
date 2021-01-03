@@ -1,0 +1,62 @@
+/*** Something Important ***/
+/*** Author: Nguyen Thanh Tra ***/
+
+Install some essential functions for Ubuntu (gcc, g++ ... ) :
+	$ sudo apt-get install build-essential
+	$ gcc --version
+	$ g++ --version
+	
+Install git for ubuntu:
+	$ sudo apt install git-all
+	$ git --version
+	
+Generating SSH Key for Ubuntu:
+	$ ssh-keygen
+	
+Install minGW for Ubuntu:
+	$ sudo apt-get update -y
+	$ sudo apt-get install -y mingw-w64
+	$ gcc -v
+	
+Install QtCreator:
+	Download Qt and install this from "download.qt.io"
+	Open terminal and run "$ sudo apt-get install libglu1-mesa-dev" before building Qt Projects
+
+Run C++ file:
+	$ g++ HelloWorld.cpp -o HelloWorld or $ g++ *.cpp -o HelloWorld
+	$ ./helloworld
+	
+Git/github/gerrit/
+
+	--All git commands and functions
+		**git config --global user.name "Tra-Thanh"		->config userName 
+		**git config --global user.email trathanhdt@gmail.com		-> config userEmail
+		**git clone https://github.com/Tra-Thanh/CPusPlus.git		-> clone a repo from git into new directory
+		**git init 		-> create an empty repo or reinitialize an existing one
+		**git status 	-> List all the file have to be commit/return the current state of repo
+		**git add .		-> add all file in the local to staging area for git. Before commit to repo, the file need to be added to the Git Index (staging area). 
+		**git add *		-> add one or more to the staging area
+		**git add [fileName]		-> add a file name to staging area
+		**git commit -m "[add something sto code]"		-> 
+		**git commit -m		-> recordor snapshot the file permanently inthe version history
+		**git commit -a		-> commit any file you've added with the git add command and also commit any file you've changed since then
+		**git diff		-> show the file differences which are not yet staged
+		**git diff -staged		-> show the differences between the files in the staging area and the latest version present'
+		**git diff [firstBranchName] [secondbranchName]		-> show the differences between 2 branchs mentioned
+		
+		**git reset [fileName]		-> to unstage the file but it preserves the file contents
+		**git reset [commitName]		-> to undo all the commit after the spaecified commit and preserves the changes locally
+		**git reset -hard [commitName]		-> to discard all history and go back to the specifiec commit
+		**git log		->to list the version history for the current branch
+		**git branch		-> to list all branches in the current repo
+		**git checkout [branchName]		-> to switch from one branch to another
+		**git checkout -b [branchName]	-> create a new branch and switch to it
+		**git push
+		**git pull origin staging	-> pull from ...
+		**git pull [repoLink]		-> to fetch and merge changes on the server to my working diretory that mean from global to local
+		**git push		-> 
+		**git stash save		-> store all the modified tracked files temporarily
+		**git stash list	-> to list all staged changeset
+		**git merge		-> blame blame
+	--How to pull code
+	--how to commit code
